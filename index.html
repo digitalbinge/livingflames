@@ -9,90 +9,104 @@
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="dist/fullpage.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
     <link rel="stylesheet" href="css/mdb.min.css">
+
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/veu0ukx.css">
 </head>
 <body>
-    <div style="height: 180px; background-color: #141414;" class="p-3">
-        <img src="img/logo.svg" alt="" class="living-flames-logo img-fluid" style="max-height: 140px;">
-    </div>
-    <div class="header-splash">
-    </div>
-    <div id="quote" class="d-flex align-items-center white-text" style="background: linear-gradient(#f0b157,#c3332c);">
-        <div class="container">
-            <div class="row py-5 justify-content-center">
-                <div class="col-10">
-                    <p class="my-5 myriad-light" style="font-size: 25px;">"Our passion is to have deep and intimate, yet powerful relationship with Our God. Living in the fullness of what it means to be a Disciple of Christ, And impacting the world around us with His love."</p>
+<div id="sidenav" class="sidenav din">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a data-menuanchor="home" href="#home">HOME</a>
+    <a data-menuanchor="about" href="#about">ABOUT</a>
+    <a data-menuanchor="social" href="#social">SOCIAL</a>
+    <a data-menuanchor="contact" href="#contact">CONTACT</a>
+</div>
+    <div id="fullpage">
+        <div class="section main off-white" data-section-name="home">
+            <nav class="nav living-flames-navbar bg-transparent justify-content-center din">
+                <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><i class="fas fa-bars float-right"></i></a>
+                <a data-menuanchor="home" class="nav-link" href="#home">HOME</a>
+                <a data-menuanchor="about" class="nav-link" href="#about">ABOUT</a>
+                <a data-menuanchor="social" class="nav-link" href="#social">SOCIAL</a>
+                <a data-menuanchor="contact" class="nav-link" href="#contact">CONTACT</a>
+            </nav>
+            <div class="container">
+                <div class="row main-hero">
+                    <div class="col-lg-6 p-0 main-image">
+                    </div>
+                    <div class="col-lg-6 logo-card d-flex flex-column justify-content-between p-5">
+                        <img src="img/svg/livingflames.svg" alt="">
+                        <div class="d-flex justify-content-around">
+                            <h1>Encounter.</h1>
+                            <h1>Empower.</h1>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="about" class="d-flex white-text pt-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-6 rgba-black-strong px-5 mb-5">
-                    <p class="my-5 myriad-light" style="font-size: 25px;">Living Flames 24-7 is a non-denominational gathering of passionate worshippers of God. Kingdom Warriors who are sold out to Jesus and live a lifestyle of Worship.</p>
-                    <p class="my-5 myriad-light" style="font-size: 25px;">Our passion is to have deep and intimate, yet powerful relationship with Our God. Living in the fullness of what it means to be a Disciple of Christ, And impacting the world around us with His love.</p>
+        <div class="section off-white" data-section-name="about">
+            <div class="container about charcoal-text myriad">
+                <div class="grid-item p-5">
+                    <h1>ABOUT US.</h1>
+                    <p>Living Flames 24-7 is local community of passionate worshippers pursuing the presence of God. Kingdom Warriors who are sold out to Jesus living a lifestyle of worship 24-7. We believe that encountering God through worship creates an atmosphere for personal and regional transformation</p>
+                </div>
+                <div class="grid-item p-0">
+                    <img src="img/fellowship.jpg" alt="fellowship" class="img-fluid">
+                </div>
+                <div class="grid-item p-0">
+                    <img src="img/worshipping.jpg" alt="praise and worship" class="img-fluid">
+                </div>
+                <div class="grid-item p-5">
+                    <h1>WORSHIP.</h1>
+                    <p>Our style of Worship is strong and passionate and Spirit filled. Our meetings are full of Encounter and Holy Spirit Fire With a worship team that is made up of mostly Millennials. Our sound is vibrant and youthful. All ages are welcome (bring earplugs if needed)</p>
                 </div>
             </div>
-            <div class="elfsight-app-f65e3504-3270-4b12-a639-032cd22b8025"></div>
+
         </div>
-    </div>
-    <!-- Footer -->
-    <footer class="page-footer font-small charcoal pt-4">
-
-        <!-- Footer Text -->
-        <div class="container text-center text-md-left">
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-
-                    <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-                        repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-                        harum esse fugiat. Itaque, culpa?</p>
-
+        <div class="section social" data-section-name="social">
+            <div class="container">
+                <div class="row charcoal p-lg-4">
+                    <div class="col-md-6 off-white-text d-flex flex-column justify-content-around pr-5 py-5">
+                        <h1 class="off-white-text">SOCIAL.</h1>
+                        <p class="myriad">Connect with us on our social channels, God is always speaking. Love Sundays as much as we do, continue the blessings when you get home!</p>
+                        <ul class="fa-ul myriad">
+                            <li><span class="fa-li"><i class="fab fa-facebook-f"></i></span>@livingflames24-7</li>
+                            <li><span class="fa-li"><i class="fab fa-youtube-square"></i></span>@livingflames24-7</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLiving-Flames-24-7-109343063920626&tabs=timeline&width=700&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=435989370155021" width="700" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
                 </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-6 mb-md-0 mb-3">
-
-                    <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-                        commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-                        excepturi hic.</p>
-
-                </div>
-                <!-- Grid column -->
-
             </div>
-            <!-- Grid row -->
-
         </div>
-        <!-- Footer Text -->
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        <div class="section contact justify-content-center align-items-center" data-section-name="contact">
+            <div class="w-50 p-5 contact-card m-auto">
+                <h1 class="my-4">CONTACT.</h1>
+                <table style="width:100%">
+                    <tr>
+                        <td class="din">When.</td>
+                        <td class="myriad pl-5">7pm to 9pm, 4th Tuesday every month</td>
+                    </tr>
+                    <tr>
+                        <td class="din">Where.</td>
+                        <td class="myriad pl-5">The Greenhouse, Cnr Main Drive & Textile Ave, Warana. Sunshine Coast, Queensland, Australia.</td>
+                    </tr>
+                    <tr>
+                        <td class="din">Email.</td>
+                        <td class="myriad pl-5"><a href="mailto:info@livingflames24-7.org.au" class="email">info@livingflames24-7.org.au</a></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <!-- Copyright -->
 
-    </footer>
-    <!-- Footer -->
-
+    </div>
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -102,9 +116,48 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
+<!--    <script src="https://apps.elfsight.com/p/platform.js" defer></script>-->
+
+    <script src="vendors/easings.min.js"></script>
+
+
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+    <script type="text/javascript" src="dist/fullpage.js"></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                //options here
+                autoScrolling:true,
+                scrollHorizontally: false,
+                anchors: ['home', 'about', 'contact', 'social' ],
+                scrollBar: false,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                scrollOverflow: true,
+                scrollOverflowReset:  true,
+                scrollOverflowOptions: null,
+                touchSensitivity: 1,
+                lazyLoading: true,
+                navigation: true
+            });
+
+            //methods
+            $.fn.fullpage.setAllowScrolling(true);
+        });
+        function openNav() {
+            const sideNav = document.getElementById("sidenav");
+            sideNav.style.width = "100%";
+        }
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+        $("#sidenav a").on("click", closeNav);
+    </script>
 
 </body>
 </html>

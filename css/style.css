@@ -1,43 +1,231 @@
-/* 1.0 Global Styles */
-.myriad-light {
-    font-family: myriad-pro, sans-serif;
-    font-weight: 300;
+/* 1.0 Global 3*/
+@font-face {
+    font-family: 'DIN Condensed Bold';
     font-style: normal;
+    font-weight: normal;
+    src: local('DIN Condensed Bold'), url('../font/din/DINCondensed-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Light Semi Condensed'), url('../font/myriad/myriadpro-light-semicondensed.otf') format('woff');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DIN Condensed Bold';
+    font-weight: normal;
+    color: #333333;
 }
 .myriad {
-    font-family: myriad-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Myriad Pro';
 }
-.myriad-semi {
-    font-family: myriad-pro, sans-serif;
-    font-weight: 600;
-    font-style: normal;
+.din {
+    font-family: "DIN Condensed Bold";
 }
-.myriad-bold {
-    font-family: myriad-pro, sans-serif;
-    font-weight: 700;
-    font-style: normal;
+.off-white {
+    background-color: #efeee2;
 }
-
-.header-splash {
-    background: url('../img/header-splash.jpg') no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 75vh;
-}
-
-#about {
-    background: url('../img/moving-flames.jpg') no-repeat center bottom fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /*height: 100vh*/
+.off-white-text {
+    color: #efeee2;
 }
 .charcoal {
-    background-color: #141414;
+    background-color: #333333;
+}
+.charcoal-text {
+    color: #333333;
+}
+.peach {
+    background-color: #e0b586;
+}
+
+/* 2.0 - Side Navigation */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #efeee2;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+    font-family: din-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 8px 32px 8px 8px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 25px;
+    color: #454649;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #686868;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 36px;
+}
+
+/* 2.1 - Main Navigation */
+.living-flames-navbar {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*margin-top: 40px;*/
+}
+
+.living-flames-navbar a.openbtn {
+    display: none;
+}
+
+.living-flames-navbar a {
+    font-family: "DIN Condensed Bold";
+    font-size: 25px;
+    color: #333333;
+}
+
+.living-flames-navbar a:hover {
+    color: #;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 600px) {
+    .living-flames-navbar a {
+        display: none;
+    }
+    .living-flames-navbar a.openbtn {
+        display: inherit;
+        font-size: 36px;
+    }
+}
+
+/* 3.0 Main FullPage */
+.main-hero {
+    /*!*max-height: 85vh;*!*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 33%;*/
+    /*transform: translateX(-24%);*/
+}
+.main {
+    height: 100vh;
+    display: flex;
+}
+.main-image {
+    background: url('../img/worship.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.logo-card {
+    background: rgb(255,243,217);
+    background: radial-gradient(circle at bottom, rgba(255,243,217,1) 0%, rgba(219,142,64,1) 100%);
+}
+
+
+/* 4.0 About Fullpage */
+
+.about {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+}
+.grid-item:nth-of-type(1){
+    order: 1;
+}
+.grid-item:nth-of-type(2){
+    order: 2;
+}
+.grid-item:nth-of-type(3){
+    order: 4;
+}
+.grid-item:nth-of-type(4){
+    order: 3;
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        grid-auto-rows: auto;
+    }
+    .grid-item {
+        grid-row: span 1;
+    }
+    .grid-item:nth-of-type(1){
+        order: 1;
+    }
+    .grid-item:nth-of-type(2){
+        order: 2;
+    }
+    .grid-item:nth-of-type(3){
+        order: 3;
+    }
+    .grid-item:nth-of-type(4){
+        order: 4;
+    }
+}
+
+/* 5.0 Social */
+
+.social {
+    background: url('../img/lines.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.social ul li, .social p {
+    font-size: 25px;
+}
+
+/* 6.0 Contact */
+
+.contact {
+    background: url('../img/contact.jpg') no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.contact-card {
+    background-color: rgba(239, 238, 226, .9);
+}
+.contact-card a.email {
+    color: #333333;
+}
+
+.contact-card table .din, .contact-card table .myriad {
+    font-size: 25px;
+}
+.contact-card td {
+     vertical-align: top;
 }
 
